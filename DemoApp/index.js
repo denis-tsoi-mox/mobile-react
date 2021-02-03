@@ -19,22 +19,31 @@ const { JumioMobileSDKNetverify } = NativeModules;
 const { JumioMobileSDKBamCheckout } = NativeModules;
 const { JumioMobileSDKDocumentVerification } = NativeModules;
 
-const API_TOKEN = '2e223db9-5a04-477a-a967-42bd52a5770b'
-const API_SECRET = '36ZzzQDXQPmuF3RMWd0Bw5duSTtWLWgw'
-const DATACENTER = 'us'
-const BAM_API_TOKEN = '7a8ae099-9ef8-4c7c-8760-e3ee72b52d11'
-const BAM_API_SECRET = '8p4zzh3ppipdaBS3ctaJyjAwL5871Moi'
-const BAM_DATACENTER = 'us'
+const API_TOKEN = 'YOUR_API_TOKEN'
+const API_SECRET = 'YOUR_API_SECRET'
+const DATACENTER = 'DATACENTER'
+const BAM_API_TOKEN = 'YOUR_BAM_API_TOKEN'
+const BAM_API_SECRET = 'YOUR_BAM_API_SECRET'
+const BAM_DATACENTER = 'BAM_DATACENTER'
+
 // Netverify
 
 const startNetverify = () => {
   JumioMobileSDKNetverify.initNetverify(API_TOKEN, API_SECRET, DATACENTER, {
-    enableVerification: true,
-    enableIdentityVerification: true,
-    userReference: "1234",
-    cameraPosition: 'BACK',
-    preselectedCountry: 'SGP',
-    documentTypes: ['IDENTITY_CARD'],
+	  enableVerification: true,
+	  //callbackUrl: "URL",
+	  //enableIdentityVerification: true,
+	  //preselectedCountry: "USA",
+	  //customerInternalReference: "123456789",
+	  //reportingCriteria: "Criteria",
+	  //userReference: "ID",
+	  //sendDebugInfoToJumio: true,
+	  //dataExtractionOnMobileOnly: false,
+	  //cameraPosition: "back",
+	  //preselectedDocumentVariant: "plastic",
+	  //documentTypes: ["PASSPORT", "DRIVER_LICENSE", "IDENTITY_CARD", "VISA"],
+	  //enableWatchlistScreening: ["enabled", "disabled" || "default"],
+	  //watchlistSearchProfile: "YOURPROFILENAME"
   });
 
   // Android only
