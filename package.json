@@ -1,10 +1,10 @@
 {
   "name": "react-native-jumio-mobilesdk",
-  "version": "3.8.0",
+  "version": "3.8.0-zoom+build",
   "description": "Official Jumio Mobile SDK plugin for React Native",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jumio/mobile-react"
+    "url": "https://github.com/denis-tsoi-mox/mobile-react"
   },
   "license": "SEE LICENSE IN README.md",
   "keywords": [
